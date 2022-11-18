@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Featured() {
     const [index,setIndex] = useState(0)
   const images = [
-    "/img/logo.png",
+    "/img/logo1.png",
     "/img/featured2.png",
     "/img/featured3.png",
     "/img/featured4.png",

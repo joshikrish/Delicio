@@ -1,8 +1,8 @@
 .container{
     height: 100px;
     padding: 0px 50px;
-    background-color: #317773;
-    color: black;
+    background-color: #270000;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -46,7 +46,7 @@
     font-weight: bold;
 }
 .cart{
-    background-color: #317773;
+    background-color: #270000;
     position:relative;
 }
 .list{
@@ -55,7 +55,7 @@
     display: flex;
     align-items: center;
     list-style: none;
-    color: black;
+    color: white;
 }
 .listItem{
     padding: 60;
@@ -70,13 +70,13 @@
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background-color: black;
+    background-color: white;
     padding-bottom: 4px;
     padding-left: 7px;
     display: flex;
     align-items: centre;
     justify-content: centre;
     font-weight: bold;
-    color: #317773;
+    color: #270000;
     font-size: large;
 }
