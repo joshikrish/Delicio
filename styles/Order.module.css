@@ -1,0 +1,57 @@
+.container{
+    padding: 50ox;
+    display: flex;
+    margin: 50px;
+}
+
+.left{
+    flex: 2;
+}
+
+.table {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 50px;
+  }
+  
+  .row:last-child {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+.status{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}  
+
+.right{
+    flex: 1;
+}
+
+.wrapper {
+    width: 90%;
+    max-height: 300px;
+    background-color: rgb(92, 49, 49);
+    padding: 50px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    margin: 50px;
+  }
+  
+  .totalTextTitle {
+    margin-right: 10px;
+  }
+
+  .button {
+    background-color: white;
+    height: 30px;
+    color: #ef1010;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: not-allowed;
+  }  
