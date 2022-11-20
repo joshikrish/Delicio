@@ -3,18 +3,25 @@ import Image from "next/image";
 import styles from "../../styles/Order.module.css";
 
 export default function Order() {
+  const status = 0;
+
+  const statusClass = (index) => {
+    if (index - status < 1) return styles.done;
+    if (index - status === 1) return styles.inProgress;
+    if (index - status > 1) return styles.undone;
+  };
   return (
     <div className={styles.container}>
       <div className={styles.left}>
         <div className={styles.row}>
           <table className={styles.table}>
-            <tr className={styles.tr}>
+            <tr className={styles.trTitle}>
               <th>Order ID</th>
               <th>Customemr</th>
               <th> Address</th>
               <th>Total</th>
             </tr>
-            <tr>
+            <tr className={styles.tr}>
               <td>
                 <span className={styles.id}>3119</span>
               </td>
@@ -31,32 +38,56 @@ export default function Order() {
           </table>
         </div>
         <div className={styles.row}>
-          <div className={styles.status}>
+          <div className={statusClass(0)}>
             <Image src="/img/paid.png" alt="" width={30} height={30} />
             <span>Payment</span>
             <div className={styles.checkedIcon}>
-              <Image src="/img/checked.png" alt="" width={20} height={20} />
+              <Image
+                className={styles.checkedIcon}
+                src="/img/checked.png"
+                alt=""
+                width={20}
+                height={20}
+              />
             </div>
           </div>
-          <div className={styles.status}>
+          <div className={statusClass(1)}>
             <Image src="/img/bake.png" alt="" width={30} height={30} />
             <span>Baking</span>
             <div className={styles.checkedIcon}>
-              <Image src="/img/checked.png" alt="" width={20} height={20} />
+              <Image
+                className={styles.checkedIcon}
+                src="/img/checked.png"
+                alt=""
+                width={20}
+                height={20}
+              />
             </div>
           </div>
-          <div className={styles.status}>
+          <div className={statusClass(2)}>
             <Image src="/img/bike.png" alt="" width={30} height={30} />
             <span>On the way</span>
             <div className={styles.checkedIcon}>
-              <Image src="/img/checked.png" alt="" width={20} height={20} />
+              <Image
+                className={styles.checkedIcon}
+                src="/img/checked.png"
+                alt=""
+                width={20}
+                height={20}
+              />
             </div>
           </div>
-          <div className={styles.status}>
+          <div className={statusClass(3)}>
             <Image src="/img/delivered.png" alt="" width={30} height={30} />
             <span>Delivered</span>
             <div className={styles.checkedIcon}>
-              <Image src="/img/checked.png" alt="" width={20} height={20} />
+              <Image
+                className={styles.checkedIcon}
+                src="/img/checked.png"
+                alt=""
+                width={20}
+                height={20}
+              />
             </div>
           </div>
         </div>

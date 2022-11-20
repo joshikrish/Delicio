@@ -16,7 +16,7 @@ export default function Product() {
     <div className={styles.container}>
       <div className={styles.left}>
         <div className={styles.imgContainer}>
-          <Image src={product.img} alt="" width="450" height="450" />
+        <Image src={product.img} objectFit="contain" layout="fill" alt="" />
         </div>
       </div>
       <div className={styles.right}>
